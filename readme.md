@@ -1,21 +1,6 @@
 ## Instructions for starting a project:
 
-=======================================
-# Clone the Repository
-1. Clone the repository containing the project code to your local machine using Git. You can do this by running the following command in your terminal or command prompt:
-***git clone <repository-url>***
-
-# Navigate to Project Directory:
-2. Navigate to the directory where you cloned the project using the cd command:
-***cd <project-directory>***
-
-# Prepare Data File:
-3. Make sure you have a JSON file named transactions.json in the same directory as your script. This file should contain the transaction data in the required format.
-
-# Run the Script:
-4. Once you have the dependencies installed and the data file ready, you can run the script using Node.js. Execute the following command:
-***node <script-name.js>***
-
+=================================================================================
 # Example Usage:
 5. After starting the script, you can create an instance of the TransactionAnalyzer class and utilize its methods to analyze the transaction data. For example:
 
@@ -25,7 +10,15 @@
 # Description of the individual work:
 In this individual work, we are developing a Transaction Analyzer class in JavaScript. This class is designed ***to analyze transaction data stored in a JSON file.*** The class provides various methods to perform operations on the transaction data, such as adding new transactions, retrieving transactions based on different criteria, calculating totals and more.
 ====================================================================================
-# Examples of the project using:
+# Examples of the project using: 
+***Method of calculating total amount(using the array method reduce)***
+[!Calculating total amount](D:\Uni\JavaScript\LI_01\calculateTotalAmount.png)
+
+***Method of finding the month with the most transactions have been made (using the array method split)***
+[!Finding the month](D:\Uni\JavaScript\LI_01\findMostTransactionsMonth.png)
+
+***Method of getting transactions by merchant name (using the array method filter)***
+[!Transaction by merchant name](D:\Uni\JavaScript\LI_01\getTransactionByMerchant.png)
 ====================================================================================
 # Answers on the control questions:
 1. What primitive data types are there in JavaScript?
@@ -54,6 +47,10 @@ The class constructor in object-oriented programming languages like JavaScript s
 In JavaScript, you can create a new instance of a class using the new keyword followed by the class name and any required arguments to the class constructor. Here's the general syntax:
 
 ***const instanceName = new ClassName(argument1, argument2, ...);***
-================================================================================================
+========================================================================================
 # The list of used source:
+1. [Rules for the provision of laboratory work](https://github.com/MSU-Courses/javascript_typescript/blob/main/lab/lab_guidelines.md)
+2. [Individual work №1](https://github.com/MSU-Courses/javascript_typescript/blob/main/lab/LI1/JS01.md)
 
+# Instructions for running the project:
+`Run the project in the VScode`
