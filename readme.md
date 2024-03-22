@@ -2,7 +2,7 @@
 
 =================================================================================
 # Example Usage:
-5. After starting the script, you can create an instance of the TransactionAnalyzer class and utilize its methods to analyze the transaction data. For example:
+After starting the script, you can create an instance of the TransactionAnalyzer class and utilize its methods to analyze the transaction data. For example:
 
 ***const transactionAnalyzer = new TransactionAnalyzer();***
 ***console.log(transactionAnalyzer.getAllTransaction());***
@@ -12,12 +12,15 @@ In this individual work, we are developing a Transaction Analyzer class in JavaS
 ====================================================================================
 # Examples of the project using: 
 ***Method of calculating total amount(using the array method reduce)***
+
 calculateTotalAmount() {
         const totalAmount = transactions.reduce((accumulator, currentValue) => accumulator + currentValue.transaction_amount, 0);
         return totalAmount;
     }
 //8000
+
 ***Method of finding the month with the most transactions have been made (using the array method split)***
+
 findMostTransactionsMonth() {
         const monthsArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
         for (let i = 0; i < transactions.length; i++) {
@@ -31,6 +34,7 @@ findMostTransactionsMonth() {
     }
 //1
 ***Method of getting transactions by merchant name (using the array method filter)***
+
 getTransactionByMerchant(merchantName) {
         const transactionsArraySortedByMerchantName = transactions.filter(transaction => {
             return (transaction.merchant_name === merchantName);
