@@ -2,10 +2,10 @@
 
 ## Example Usage:
 After starting the script, you can create an instance of the TransactionAnalyzer class and utilize its methods to analyze the transaction data. For example:
-
-***const transactionAnalyzer = new TransactionAnalyzer();***
-***console.log(transactionAnalyzer.getAllTransaction());***
-
+```
+const transactionAnalyzer = new TransactionAnalyzer();
+console.log(transactionAnalyzer.getAllTransaction());
+```
 ## Description of the individual work:
 
 In this individual work, we are developing a Transaction Analyzer class in JavaScript. This class is designed ***to analyze transaction data stored in a JSON file.*** The class provides various methods to perform operations on the transaction data, such as adding new transactions, retrieving transactions based on different criteria, calculating totals and more.
