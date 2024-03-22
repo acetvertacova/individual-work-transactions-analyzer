@@ -1,17 +1,17 @@
-## Instructions for starting a project:
+# Instructions for starting a project:
 
-# Example Usage:
+## Example Usage:
 After starting the script, you can create an instance of the TransactionAnalyzer class and utilize its methods to analyze the transaction data. For example:
 
 ***const transactionAnalyzer = new TransactionAnalyzer();***
 ***console.log(transactionAnalyzer.getAllTransaction());***
 
-# Description of the individual work:
+## Description of the individual work:
 
 In this individual work, we are developing a Transaction Analyzer class in JavaScript. This class is designed ***to analyze transaction data stored in a JSON file.*** The class provides various methods to perform operations on the transaction data, such as adding new transactions, retrieving transactions based on different criteria, calculating totals and more.
 
 
-# Examples of the project using: 
+## Examples of the project using: 
 ***Method of calculating total amount(using the array method reduce)***
 ```
 calculateTotalAmount() {
@@ -46,7 +46,7 @@ getTransactionByMerchant(merchantName) {
     }
 ```
 
-# Answers on the control questions:
+## Answers on the control questions:
 1. What primitive data types are there in JavaScript?
    **number**
     **undefined**
@@ -74,9 +74,9 @@ In JavaScript, you can create a new instance of a class using the new keyword fo
 
 ***const instanceName = new ClassName(argument1, argument2, ...);***
 
-# The list of used source:
+## The list of used source:
 1. [Rules for the provision of laboratory work](https://github.com/MSU-Courses/javascript_typescript/blob/main/lab/lab_guidelines.md)
 2. [Individual work №1](https://github.com/MSU-Courses/javascript_typescript/blob/main/lab/LI1/JS01.md)
 
-# Instructions for running the project:
+## Instructions for running the project:
 `Run the project in the VScode`
