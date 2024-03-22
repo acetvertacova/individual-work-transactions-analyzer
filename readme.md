@@ -1,4 +1,4 @@
-## Instructions for starting a project:
+## Instructions for starting a project:##
 
 =================================================================================
 # Example Usage:
@@ -12,13 +12,32 @@ In this individual work, we are developing a Transaction Analyzer class in JavaS
 ====================================================================================
 # Examples of the project using: 
 ***Method of calculating total amount(using the array method reduce)***
-[!Calculating total amount](D:\Uni\JavaScript\LI_01\calculateTotalAmount.png)
-
+ calculateTotalAmount() {
+        const totalAmount = transactions.reduce((accumulator, currentValue) => accumulator + currentValue.transaction_amount, 0);
+        return totalAmount;
+    }
+//8000
 ***Method of finding the month with the most transactions have been made (using the array method split)***
-[!Finding the month](D:\Uni\JavaScript\LI_01\findMostTransactionsMonth.png)
+findMostTransactionsMonth() {
+        const monthsArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        for (let i = 0; i < transactions.length; i++) {
+            const dateByParts = transactions[i].transaction_date.split("-");
+            const monthIndex = dateByParts[1] - 1;
+            monthsArray[monthIndex]++;
+        }
 
+        const maxIndex = monthsArray.indexOf(Math.max(...monthsArray));
+        return maxIndex + 1;
+    }
+//1
 ***Method of getting transactions by merchant name (using the array method filter)***
-[!Transaction by merchant name](D:\Uni\JavaScript\LI_01\getTransactionByMerchant.png)
+getTransactionByMerchant(merchantName) {
+        const transactionsArraySortedByMerchantName = transactions.filter(transaction => {
+            return (transaction.merchant_name === merchantName);
+        });
+
+        return transactionsArraySortedByMerchantName;
+    }
 ====================================================================================
 # Answers on the control questions:
 1. What primitive data types are there in JavaScript?
